@@ -6,10 +6,10 @@ class TicTacToe:
         self.P = [str(p) for p in range(1, 10)]
 
     def print_board(self):
-        print("\n  -------------")
+        print("\n\t-------------")
         for v in range(0, 9, 3):
-            print("  | " + self.P[0 + v] + " | " + self.P[1 + v] + " | " + self.P[2 + v] + " |")
-            print("  -------------")
+            print("\t| " + self.P[0 + v] + " | " + self.P[1 + v] + " | " + self.P[2 + v] + " |")
+            print("\t-------------")
 
     def input_validator(self, position):
         if str(position) not in self.P:
